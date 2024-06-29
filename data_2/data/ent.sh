@@ -8,7 +8,7 @@ echo '  "results": ['
 count=0
 
 # 7z, rar, zip ディレクトリに対してループ
-for dir in 7z rar zip; do
+for dir in original 7z rar zip; do
     # 各ディレクトリ内のファイルに対して再帰的にループ
     find "$dir" -type f | while read -r file; do
         # ./entropy コマンドの実行結果を取得
